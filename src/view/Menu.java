@@ -30,8 +30,13 @@ public class Menu extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         Movimentacao = new javax.swing.JCheckBoxMenuItem();
+        PlanoDeContas = new javax.swing.JCheckBoxMenuItem();
         Usuarios = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem3 = new javax.swing.JCheckBoxMenuItem();
+        FichaRazao = new javax.swing.JCheckBoxMenuItem();
+        Atualizacao = new javax.swing.JCheckBoxMenuItem();
+        Desatualizacao = new javax.swing.JCheckBoxMenuItem();
+        Balancete = new javax.swing.JCheckBoxMenuItem();
+        Balanco = new javax.swing.JCheckBoxMenuItem();
         jMenu2 = new javax.swing.JMenu();
         Sair = new javax.swing.JCheckBoxMenuItem();
 
@@ -49,6 +54,11 @@ public class Menu extends javax.swing.JFrame {
         );
 
         jMenu1.setText("Cadastros");
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
+            }
+        });
 
         Movimentacao.setSelected(true);
         Movimentacao.setText("Movimentacao");
@@ -59,8 +69,17 @@ public class Menu extends javax.swing.JFrame {
         });
         jMenu1.add(Movimentacao);
 
+        PlanoDeContas.setSelected(true);
+        PlanoDeContas.setText("Plano de Contas");
+        PlanoDeContas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlanoDeContasActionPerformed(evt);
+            }
+        });
+        jMenu1.add(PlanoDeContas);
+
         Usuarios.setSelected(true);
-        Usuarios.setText("Plano de Contas");
+        Usuarios.setText("Usuarios");
         Usuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsuariosActionPerformed(evt);
@@ -68,14 +87,50 @@ public class Menu extends javax.swing.JFrame {
         });
         jMenu1.add(Usuarios);
 
-        jCheckBoxMenuItem3.setSelected(true);
-        jCheckBoxMenuItem3.setText("Usuarios");
-        jCheckBoxMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        FichaRazao.setSelected(true);
+        FichaRazao.setText("Ficha Razao");
+        FichaRazao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBoxMenuItem3ActionPerformed(evt);
+                FichaRazaoActionPerformed(evt);
             }
         });
-        jMenu1.add(jCheckBoxMenuItem3);
+        jMenu1.add(FichaRazao);
+
+        Atualizacao.setSelected(true);
+        Atualizacao.setText("Atualizacao");
+        Atualizacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtualizacaoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Atualizacao);
+
+        Desatualizacao.setSelected(true);
+        Desatualizacao.setText("Desatualizacao");
+        Desatualizacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DesatualizacaoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Desatualizacao);
+
+        Balancete.setSelected(true);
+        Balancete.setText("Balancete");
+        Balancete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BalanceteActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Balancete);
+
+        Balanco.setSelected(true);
+        Balanco.setText("Balanco");
+        Balanco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BalancoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Balanco);
 
         jMenuBar1.add(jMenu1);
 
@@ -122,17 +177,46 @@ public class Menu extends javax.swing.JFrame {
         }        // TODO add your handling code here:
     }//GEN-LAST:event_SairActionPerformed
 
-    private void UsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuariosActionPerformed
+    private void PlanoDeContasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlanoDeContasActionPerformed
         PlanoDeContas janela = new PlanoDeContas();
         jDesktopPane.add(janela);
         janela.setVisible(true);      // TODO add your handling code here:
-    }//GEN-LAST:event_UsuariosActionPerformed
+    }//GEN-LAST:event_PlanoDeContasActionPerformed
 
-    private void jCheckBoxMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem3ActionPerformed
+    private void UsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuariosActionPerformed
         Usuarios janela = new Usuarios();
         jDesktopPane.add(janela);
         janela.setVisible(true);          // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBoxMenuItem3ActionPerformed
+    }//GEN-LAST:event_UsuariosActionPerformed
+
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void FichaRazaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FichaRazaoActionPerformed
+        FichaRazao janela = new FichaRazao();
+        janela.setVisible(true);         // TODO add your handling code here:
+    }//GEN-LAST:event_FichaRazaoActionPerformed
+
+    private void AtualizacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtualizacaoActionPerformed
+        Atualizacao janela = new Atualizacao();
+        janela.setVisible(true);             // TODO add your handling code here:
+    }//GEN-LAST:event_AtualizacaoActionPerformed
+
+    private void DesatualizacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DesatualizacaoActionPerformed
+        Desatualizacao janela = new Desatualizacao();
+        janela.setVisible(true);             // TODO add your handling code here:
+    }//GEN-LAST:event_DesatualizacaoActionPerformed
+
+    private void BalanceteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BalanceteActionPerformed
+        Balancete janela = new Balancete();
+        janela.setVisible(true);             // TODO add your handling code here:
+    }//GEN-LAST:event_BalanceteActionPerformed
+
+    private void BalancoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BalancoActionPerformed
+        Balanco janela = new Balanco();
+        janela.setVisible(true);
+    }//GEN-LAST:event_BalancoActionPerformed
   
     /**
      * @param args the command line arguments
@@ -170,10 +254,15 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBoxMenuItem Atualizacao;
+    private javax.swing.JCheckBoxMenuItem Balancete;
+    private javax.swing.JCheckBoxMenuItem Balanco;
+    private javax.swing.JCheckBoxMenuItem Desatualizacao;
+    private javax.swing.JCheckBoxMenuItem FichaRazao;
     private javax.swing.JCheckBoxMenuItem Movimentacao;
+    private javax.swing.JCheckBoxMenuItem PlanoDeContas;
     private javax.swing.JCheckBoxMenuItem Sair;
     private javax.swing.JCheckBoxMenuItem Usuarios;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem3;
     private javax.swing.JDesktopPane jDesktopPane;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;

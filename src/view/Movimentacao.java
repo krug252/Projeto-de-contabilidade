@@ -46,7 +46,7 @@ public class Movimentacao extends javax.swing.JInternalFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setText("NOME DA MOVIMENTACAO");
+        jLabel1.setText("NOME DA MOVIMENTAÇÃO");
 
         jtfPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -298,7 +298,7 @@ private void preencheJTable(String campo) {
             m.getDsDC()
         });
     }
-
+    
     dataSource.closeDataSource();
 }
 

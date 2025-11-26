@@ -99,7 +99,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="NOME DA MOVIMENTACAO"/>
+            <Property name="text" type="java.lang.String" value="NOME DA MOVIMENTA&#xc7;&#xc3;O"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jtfPesquisar">
