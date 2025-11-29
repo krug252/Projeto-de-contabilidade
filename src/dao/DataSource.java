@@ -21,11 +21,11 @@ public class DataSource {
     public DataSource(){
         try{
             //seta valores nas variáveis de conexão
-            hostname = "192.168.20.5";
+            hostname = "localhost";
             porta = 3306;
-            database = "contabilidadekrug";
+            database = "db";
             username = "root";
-            password = "12345";
+            password = "";
                     
             //string de conexão
             String url = "jdbc:mysql://"+hostname+":"+porta+"/"+database+"?useTimezone=true&serverTimezone=UTC";
@@ -58,4 +58,5 @@ public class DataSource {
             JOptionPane.showMessageDialog(null, "Erro ao desconectar" + ex.getMessage());
         }
     }
+
 }
